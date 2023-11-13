@@ -12,7 +12,7 @@ const SectionHeader = ({
   subHeading,
 }: SectionHeaderProps) => {
   return (
-    <div className="flex flex-col items-center gap-2">
+    <div className="flex flex-col gap-2">
       <DividerHeader text={dividerHeading} />
       <h2 className="font-montserrat font-bold leading-9 text-[30px] text-white text-center">
         {mainHeading}

@@ -9,9 +9,9 @@ type MediaCardProps = {
 
 const MediaCard = ({ image, imageAlt, heading, copy }: MediaCardProps) => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center border border-red-500">
       <Image height={350} src={image} alt={imageAlt} />
-      <div className="flex flex-col bg-gray-700 border-b-8 border-green-300 mx-4 -mt-10 pt-4 px-6 pb-9 gap-2">
+      <div className="flex flex-col bg-gray-700 border-b-8 border-green-300 mx-4 md:mx-8 -mt-9 pt-4 px-6 pb-9 gap-2">
         <h4 className="font-montserrat font-bold text-xl text-white">
           {heading}
         </h4>
