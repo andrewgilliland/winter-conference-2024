@@ -4,7 +4,6 @@ import webster1 from "../../public/webster-1.jpg";
 import webster2 from "../../public/webster-2.jpg";
 import audience1 from "../../public/audience-1.jpg";
 import connect1 from "../../public/connect-1.jpg";
-import ArrowUpRightFromSquare from "./ArrowUpRightFromSquare";
 import ButtonLink from "./ButtonLink";
 
 const WhatSection = () => {
