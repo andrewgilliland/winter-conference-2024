@@ -1,7 +1,6 @@
 const ChevronCircle = () => {
   return (
     <svg
-      className="w-8 h-8"
       width="24"
       height="25"
       viewBox="0 0 24 25"
