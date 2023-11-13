@@ -31,7 +31,7 @@ const WhatSection = () => {
 
   return (
     <section className="bg-gray-800 py-12 md:py-16">
-      <div className="flex flex-col items-center px-4 md:px-0 mx-auto max-w-[640px] gap-8 md:gap-12 border border-purple-500">
+      <div className="flex flex-col items-center px-4 md:px-0 mx-auto max-w-[640px] lg:max-w-[768px] gap-8 md:gap-12 border border-purple-500">
         <SectionHeader
           dividerHeading="What is Winter conference?"
           mainHeading="The Biggest Event in Precision Ag"

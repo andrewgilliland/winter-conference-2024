@@ -7,6 +7,9 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      lg: "920px",
+    },
     extend: {
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],
