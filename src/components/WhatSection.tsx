@@ -46,6 +46,7 @@ const WhatSection = () => {
               imageAlt={imageAlt}
               heading={heading}
               copy={copy}
+              index={index}
             />
           ))}
         </div>
