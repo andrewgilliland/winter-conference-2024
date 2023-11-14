@@ -40,7 +40,6 @@ const FAQSection = () => {
 
   return (
     <section className="bg-green-800 py-12">
-      {/* <div className="flex flex-col mx-auto px-4 gap-8 max-w-5xl"> */}
       <Container>
         <DividerHeader text="Frequently Asked Questions" />
 
@@ -50,7 +49,6 @@ const FAQSection = () => {
           ))}
         </div>
       </Container>
-      {/* </div> */}
     </section>
   );
 };
