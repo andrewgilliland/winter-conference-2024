@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ChevronCircle from "./ChevronCircle";
 
 type AccordionItemProps = {
@@ -10,6 +10,12 @@ type AccordionItemProps = {
 
 const AccordionItem = ({ heading, copy }: AccordionItemProps) => {
   const [isOpen, setIsOpen] = useState(true);
+  const [height, setHeight] = useState<number>();
+  const divRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    divRef.current && setHeight(divRef.current.offsetHeight);
+  }, []);
 
   return (
     <div
@@ -32,7 +38,20 @@ const AccordionItem = ({ heading, copy }: AccordionItemProps) => {
           <ChevronCircle />
         </div>
       </button>
-      {isOpen && <p className="font-roboto text-lg">{copy}</p>}
+
+      <div
+        ref={divRef}
+        style={{
+          height: isOpen ? `${height}px` : "0px",
+          overflow: "hidden",
+          transition: "all 0.3s ease",
+        }}
+        className={`overflow-hidden transition-all`}
+      >
+        <p className={`font-roboto text-lg transform transition-transform `}>
+          {copy}
+        </p>
+      </div>
     </div>
   );
 };
