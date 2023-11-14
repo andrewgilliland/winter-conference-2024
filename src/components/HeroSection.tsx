@@ -35,7 +35,7 @@ const HeroSection = () => {
           src={winterConference2024Logo}
           alt="Winter Conference 2024 Logo"
         />
-        <h2 className="font-montserrat text-green-300 text-xl md:text-4xl text-center">
+        <h2 className="font-montserrat text-green-300 text-xl md:text-2xl xl:text-4xl text-center max-w-[400px] xl:max-w-[600px]">
           Experience the event that will change the way you farm.
         </h2>
       </div>

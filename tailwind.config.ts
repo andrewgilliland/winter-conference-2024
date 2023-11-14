@@ -10,6 +10,7 @@ const config: Config = {
     screens: {
       md: "768px",
       lg: "920px",
+      xl: "1440px",
     },
     extend: {
       fontFamily: {
