@@ -1,5 +1,6 @@
 import AccordionItem from "./AccordionItem";
 import ChevronCircle from "./ChevronCircle";
+import Container from "./Container";
 import DividerHeader from "./DividerHeader";
 
 const FAQSection = () => {
@@ -22,21 +23,34 @@ const FAQSection = () => {
     },
     {
       heading: "I have more questions.",
-      copy: "We're happy to chat! Reach out to our team at events@precisionplanting.com.",
+      copy: (
+        <span>
+          We're happy to chat! Reach out to our team at{" "}
+          <a
+            className="text-green-200"
+            href="mailto:events@precisionplanting.com"
+          >
+            events@precisionplanting.com
+          </a>
+          .
+        </span>
+      ),
     },
   ];
 
   return (
     <section className="bg-green-800 py-12">
-      <div className="flex flex-col px-4 gap-8">
+      {/* <div className="flex flex-col mx-auto px-4 gap-8 max-w-5xl"> */}
+      <Container>
         <DividerHeader text="Frequently Asked Questions" />
 
-        <div className="border-t border-black border-opacity-[33%]">
+        <div className="border-t border-black border-opacity-[33%] ">
           {accordionContent.map(({ heading, copy }) => (
             <AccordionItem heading={heading} copy={copy} />
           ))}
         </div>
-      </div>
+      </Container>
+      {/* </div> */}
     </section>
   );
 };

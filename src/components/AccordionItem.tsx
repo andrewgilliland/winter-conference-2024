@@ -1,11 +1,11 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { ReactNode, useEffect, useRef, useState } from "react";
 import ChevronCircle from "./ChevronCircle";
 
 type AccordionItemProps = {
   heading: string;
-  copy: string;
+  copy: ReactNode;
 };
 
 const AccordionItem = ({ heading, copy }: AccordionItemProps) => {

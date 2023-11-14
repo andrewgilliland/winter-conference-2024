@@ -5,6 +5,7 @@ import webster2 from "../../public/webster-2.jpg";
 import audience1 from "../../public/audience-1.jpg";
 import connect1 from "../../public/connect-1.jpg";
 import ButtonLink from "./ButtonLink";
+import Container from "./Container";
 
 const WhatSection = () => {
   const mediaItems = [
@@ -30,28 +31,30 @@ const WhatSection = () => {
 
   return (
     <section className="bg-gray-800 py-12 md:py-16">
-      <div className="flex flex-col items-center px-4 md:px-0 mx-auto max-w-[640px] lg:max-w-[768px] gap-8 md:gap-12 border border-purple-500">
-        <SectionHeader
-          dividerHeading="What is Winter conference?"
-          mainHeading="The Biggest Event in Precision Ag"
-          subHeading="Precision Planting's annual event attended by over 4,500 farmers globally."
-        />
+      <Container>
+        <>
+          <SectionHeader
+            dividerHeading="What is Winter conference?"
+            mainHeading="The Biggest Event in Precision Ag"
+            subHeading="Precision Planting's annual event attended by over 4,500 farmers globally."
+          />
 
-        <div className="flex flex-col gap-10">
-          {mediaItems.map(({ image, imageAlt, heading, copy }, index) => (
-            <MediaCard
-              key={index}
-              image={image}
-              imageAlt={imageAlt}
-              heading={heading}
-              copy={copy}
-              index={index}
-            />
-          ))}
-        </div>
+          <div className="flex flex-col gap-10">
+            {mediaItems.map(({ image, imageAlt, heading, copy }, index) => (
+              <MediaCard
+                key={index}
+                image={image}
+                imageAlt={imageAlt}
+                heading={heading}
+                copy={copy}
+                index={index}
+              />
+            ))}
+          </div>
 
-        <ButtonLink />
-      </div>
+          <ButtonLink />
+        </>
+      </Container>
     </section>
   );
 };
