@@ -2,10 +2,11 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import winterConference2024Logo from "../../public/WC24_logo-horiz_RGB 1.svg";
+import winterConference2024Logo from "../../public/wc24-logo.svg";
 import farmer1 from "../../public/farmer-1.jpg";
 import mcmenamy2 from "../../public/mcmenamy-2.jpg";
 import { breakpoint } from "../lib/breakpoint";
+import Dots from "../components/Dots";
 
 const HeroSection = () => {
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
@@ -20,13 +21,15 @@ const HeroSection = () => {
 
   return (
     <section
-      className="bg-center bg-cover"
+      className="relative bg-center bg-cover"
       style={{
         backgroundImage: `url(${
           viewportWidth < breakpoint.md ? farmer1.src : mcmenamy2.src
         })`,
       }}
     >
+      <Dots className="hidden md:block absolute top-2 left-2" />
+      <Dots className="hidden md:block absolute bottom-2 right-2" />
       <div className="flex flex-col items-center gap-6 px-8 py-20">
         <Image
           src={winterConference2024Logo}

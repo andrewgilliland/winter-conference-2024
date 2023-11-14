@@ -1,5 +1,10 @@
-const Dots = () => (
+type DotsProps = {
+  className?: string;
+};
+
+const Dots = ({ className }: DotsProps) => (
   <svg
+    className={className}
     width="203"
     height="142"
     viewBox="0 0 203 142"
