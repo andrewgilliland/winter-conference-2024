@@ -15,6 +15,7 @@ const AccordionItem = ({ heading, copy }: AccordionItemProps) => {
 
   useEffect(() => {
     divRef.current && setHeight(divRef.current.offsetHeight);
+    setIsOpen(false);
   }, []);
 
   return (

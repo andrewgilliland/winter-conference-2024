@@ -2,6 +2,7 @@ import Image, { StaticImageData } from "next/image";
 
 type MediaCardProps = {
   image: StaticImageData;
+  imageMd: StaticImageData;
   imageAlt: string;
   heading: string;
   copy: string;
@@ -10,6 +11,7 @@ type MediaCardProps = {
 
 const MediaCard = ({
   image,
+  imageMd,
   imageAlt,
   heading,
   copy,
@@ -21,12 +23,18 @@ const MediaCard = ({
     <div
       className={`flex flex-col ${
         isEven ? "lg:flex-row" : "lg:flex-row-reverse"
-      }  items-center border border-red-500`}
+      }  items-center`}
     >
       <Image
-        className="lg:flex-1"
+        className="md:hidden lg:flex-1"
         height={350}
         src={image}
+        alt={imageAlt}
+        placeholder="blur"
+      />
+      <Image
+        className="hidden md:block"
+        src={imageMd}
         alt={imageAlt}
         placeholder="blur"
       />
