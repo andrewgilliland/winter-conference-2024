@@ -1,17 +1,33 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import winterConference2024Logo from "../../public/WC24_logo-horiz_RGB 1.svg";
-import mcmenamy1 from "../../public/mcmenamy-1.jpg";
+import farmer1 from "../../public/farmer-1.jpg";
+import mcmenamy2 from "../../public/mcmenamy-2.jpg";
+import { breakpoint } from "../lib/breakpoint";
 
 const HeroSection = () => {
+  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setViewportWidth(window.innerWidth);
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <section className="relative w-full bg-cover bg-center">
-      <Image
-        src={mcmenamy1}
-        alt="McMenamy laying down some knowledge."
-        className="z-0 absolute"
-      />
-      <div className="w-full h-[33.5vh] bg-black opacity-70 z-10 absolute" />
-      <div className="flex flex-col items-center gap-6 px-8 z-20 absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-1/2">
+    <section
+      className="bg-center bg-cover"
+      style={{
+        backgroundImage: `url(${
+          viewportWidth < breakpoint.md ? farmer1.src : mcmenamy2.src
+        })`,
+      }}
+    >
+      <div className="flex flex-col items-center gap-6 px-8 py-20">
         <Image
           src={winterConference2024Logo}
           alt="Winter Conference 2024 Logo"
