@@ -1,12 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
-import winterConference2024Logo from "../../public/wc24-logo.svg";
 import farmer1 from "../../public/farmer-1.jpg";
 import mcmenamy2 from "../../public/mcmenamy-2.jpg";
 import { breakpoint } from "../lib/breakpoint";
 import Dots from "../components/Dots";
+import WinterConferenceLogo from "./WinterConferenceLogo";
 
 const HeroSection = () => {
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
@@ -29,12 +28,9 @@ const HeroSection = () => {
       }}
     >
       <Dots className="hidden md:block absolute top-2 left-2" />
-      <Dots className="hidden md:block absolute bottom-2 right-2" />
+      <Dots className="hidden md:block absolute bottom-1 right-2" />
       <div className="flex flex-col items-center gap-6 px-8 py-20">
-        <Image
-          src={winterConference2024Logo}
-          alt="Winter Conference 2024 Logo"
-        />
+        <WinterConferenceLogo className="h-16 md:h-[92px] lg:h-[131px]" />
         <h2 className="font-montserrat text-green-300 text-xl md:text-2xl xl:text-4xl text-center max-w-[400px] xl:max-w-[600px]">
           Experience the event that will change the way you farm.
         </h2>
