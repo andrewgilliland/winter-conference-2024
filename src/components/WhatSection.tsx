@@ -12,21 +12,21 @@ import Container from "./Container";
 const WhatSection = () => {
   const mediaItems = [
     {
-      image: webster1,
+      imageBase: webster1,
       imageMd: webster2,
       imageAlt: "Jason Webster telling farmers what's up.",
       heading: "Hear from AgTech Leaders",
       copy: "Engineers, agronomists, and product experts will share insights focused on improving farm operations with solutions for every season.",
     },
     {
-      image: audience1,
+      imageBase: audience1,
       imageMd: audience2,
       imageAlt: "Man taking notes during conference talk.",
       heading: "Eliminate Challenges",
       copy: "Learn strategies and techniques that you can implement immediately on your farm. Plus, experience demonstrations and opportunities to see the latest Precision Planting technologies.",
     },
     {
-      image: connect1,
+      imageBase: connect1,
       imageMd: connect2,
       imageAlt: "Men having conversation at conference.",
       heading: "Connect With Other Farmers",
@@ -46,10 +46,10 @@ const WhatSection = () => {
 
           <div className="flex flex-col gap-10">
             {mediaItems.map(
-              ({ image, imageMd, imageAlt, heading, copy }, index) => (
+              ({ imageBase, imageMd, imageAlt, heading, copy }, index) => (
                 <MediaCard
                   key={index}
-                  image={image}
+                  imageBase={imageBase}
                   imageMd={imageMd}
                   imageAlt={imageAlt}
                   heading={heading}
