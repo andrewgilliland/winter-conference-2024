@@ -11,11 +11,11 @@ const FAQSection = () => {
     },
     {
       heading: "What can I expect at Winter Conference?",
-      copy: "During each session, we share what we have been learning as a company over the last year that will bring value to your farming operation and helpful tips for you as you evaluate your current farm equipment. We also share new technologies, product updates, as well as the latest insights from our Precision Technology Institute Farm. There’s content for anyone! Plus, get time between sessions and over lunch to connect with passionate farmers like you from your area and around the world!",
+      copy: "During each session, we share what we have been learning as a company over the last year that will bring value to your farming operation and helpful tips for you as you evaluate your current farm equipment. We also share new technologies, product updates, as well as the latest insights from our Precision Technology Institute Farm. There&apos;s content for anyone! Plus, get time between sessions and over lunch to connect with passionate farmers like you from your area and around the world!",
     },
     {
       heading: "What is a Winter Conference remote location?",
-      copy: "Remote locations offer live face-to-face sessions with Precision Planting employees and experts discussing the unique challenges you face where you farm. They also feature recorded sessions from our Tremont location, so you don't miss any exciting news and teachings from the main stage!",
+      copy: "Remote locations offer live face-to-face sessions with Precision Planting employees and experts discussing the unique challenges you face where you farm. They also feature recorded sessions from our Tremont location, so you don&apos;t miss any exciting news and teachings from the main stage!",
     },
     {
       heading: "What does it cost?",
@@ -25,7 +25,7 @@ const FAQSection = () => {
       heading: "I have more questions.",
       copy: (
         <span>
-          We're happy to chat! Reach out to our team at{" "}
+          We&apos;re happy to chat! Reach out to our team at{" "}
           <a
             className="text-green-200"
             href="mailto:events@precisionplanting.com"
@@ -43,8 +43,8 @@ const FAQSection = () => {
       <Container>
         <DividerHeader text="Frequently Asked Questions" />
         <div className="border-t border-black border-opacity-[33%] ">
-          {accordionContent.map(({ heading, copy }) => (
-            <AccordionItem heading={heading} copy={copy} />
+          {accordionContent.map(({ heading, copy }, index) => (
+            <AccordionItem key={index} heading={heading} copy={copy} />
           ))}
         </div>
       </Container>
