@@ -1,5 +1,4 @@
 import AccordionItem from "./AccordionItem";
-import ChevronCircle from "./ChevronCircle";
 import Container from "./Container";
 import DividerHeader from "./DividerHeader";
 
