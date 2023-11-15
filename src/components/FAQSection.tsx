@@ -42,7 +42,6 @@ const FAQSection = () => {
     <section className="bg-green-800 py-12">
       <Container>
         <DividerHeader text="Frequently Asked Questions" />
-
         <div className="border-t border-black border-opacity-[33%] ">
           {accordionContent.map(({ heading, copy }) => (
             <AccordionItem heading={heading} copy={copy} />
