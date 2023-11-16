@@ -54,9 +54,9 @@ const HeroSection = () => {
       ))}
       <Dots className="hidden md:block absolute top-2 left-2" />
       <Dots className="hidden md:block absolute bottom-1 right-2" />
-      <div className="flex flex-col items-center gap-6 px-8 py-20">
+      <div className="flex flex-col items-center gap-6 py-20">
         <WinterConferenceLogo className="h-16 md:h-[92px] lg:h-[131px]" />
-        <h2 className="font-montserrat text-green-300 text-xl md:text-2xl xl:text-4xl text-center max-w-[400px] xl:max-w-[600px]">
+        <h2 className="font-montserrat font-medium text-green-300 text-xl md:text-2xl xl:text-4xl text-center max-w-[378px] xl:max-w-[600px]">
           Experience the event that will change the way you farm.
         </h2>
       </div>

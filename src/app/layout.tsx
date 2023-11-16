@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { Montserrat, Roboto } from "next/font/google";
 import "./globals.css";
 
-const montserrat = Montserrat({
+export const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
 });
 
-const roboto = Roboto({
+export const roboto = Roboto({
   subsets: ["latin"],
   variable: "--font-roboto",
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} ${roboto.className}`}>
+      <body className={`${montserrat.variable} ${roboto.variable}`}>
         {children}
       </body>
     </html>
