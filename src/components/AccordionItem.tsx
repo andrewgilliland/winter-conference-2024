@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactNode, useEffect, useRef, useState } from "react";
-import ChevronCircle from "./ChevronCircle";
+import ChevronCircle from "./svgs/ChevronCircle";
 
 type AccordionItemProps = {
   heading: string;

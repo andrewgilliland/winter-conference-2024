@@ -1,13 +1,13 @@
 "use client";
 
-import wcHeroBase from "../../public/wc-hero-base.png";
-import wcHeroMd from "../../public/wc-hero-md.png";
-import wcHeroLg from "../../public/wc-hero-lg.png";
-import wcHeroXl from "../../public/wc-hero-xl.png";
-import wcHero2Xl from "../../public/wc-hero-2xl.png";
-import { breakpoint } from "../lib/breakpoint";
-import Dots from "../components/Dots";
-import WinterConferenceLogo from "./WinterConferenceLogo";
+import wcHeroBase from "../../../public/wc-hero-base.png";
+import wcHeroMd from "../../../public/wc-hero-md.png";
+import wcHeroLg from "../../../public/wc-hero-lg.png";
+import wcHeroXl from "../../../public/wc-hero-xl.png";
+import wcHero2Xl from "../../../public/wc-hero-2xl.png";
+import { breakpoint } from "../../lib/breakpoint";
+import Dots from "../svgs/Dots";
+import WinterConferenceLogo from "../svgs/WinterConferenceLogo";
 import Image from "next/image";
 
 const HeroSection = () => {

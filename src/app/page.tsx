@@ -1,7 +1,7 @@
-import WhatSection from "@/components/WhatSection";
-import HeroSection from "@/components/HeroSection";
-import WhereSection from "@/components/WhereSection";
-import FAQSection from "@/components/FAQSection";
+import WhatSection from "@/components/sections/WhatSection";
+import HeroSection from "@/components/sections/HeroSection";
+import WhereSection from "@/components/sections/WhereSection";
+import FAQSection from "@/components/sections/FAQSection";
 
 export default function Home() {
   return (

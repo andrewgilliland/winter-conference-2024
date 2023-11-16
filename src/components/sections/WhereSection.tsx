@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Container from "./Container";
-import SectionHeader from "./SectionHeader";
-import tremontAudience1 from "../../public/tremont-audience-1.jpeg";
-import map from "../../public/wc24-map-1.jpg";
-import ButtonLink from "./ButtonLink";
+import Container from "../Container";
+import SectionHeader from "../SectionHeader";
+import tremontAudience1 from "../../../public/tremont-audience-1.jpeg";
+import map from "../../../public/wc24-map-1.jpg";
+import ButtonLink from "../ButtonLink";
 
 const WhereSection = () => (
   <section className="relative z-0">

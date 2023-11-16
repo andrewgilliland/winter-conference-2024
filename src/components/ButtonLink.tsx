@@ -1,4 +1,4 @@
-import ArrowUpRightFromSquare from "./ArrowUpRightFromSquare";
+import ArrowUpRightFromSquare from "./svgs/ArrowUpRightFromSquare";
 
 type ButtonLinkProps = {
   backgroundColor?: string;

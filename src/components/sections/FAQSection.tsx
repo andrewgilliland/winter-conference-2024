@@ -1,6 +1,6 @@
-import AccordionItem from "./AccordionItem";
-import Container from "./Container";
-import DividerHeader from "./DividerHeader";
+import AccordionItem from "../AccordionItem";
+import Container from "../Container";
+import DividerHeader from "../DividerHeader";
 
 const FAQSection = () => {
   const accordionContent = [
