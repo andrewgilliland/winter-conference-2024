@@ -21,7 +21,7 @@ const ButtonLink = ({
           aria-label="Register"
         >
           <div className="flex justify-center items-center">
-            <div className="font-montserrat font-bold text-base md:text-lg mr-1.5">
+            <div className="font-montserrat font-bold text-base text-white md:text-lg mr-1.5">
               {text}
             </div>
             <ArrowUpRightFromSquare />

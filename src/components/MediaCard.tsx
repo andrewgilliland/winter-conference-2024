@@ -48,7 +48,7 @@ const MediaCard = ({
         <h4 className="font-montserrat font-bold text-xl xl:text-2xl text-white">
           {heading}
         </h4>
-        <p className="font-roboto text-lg xl:text-xl">{copy}</p>
+        <p className="font-roboto text-lg text-white xl:text-xl">{copy}</p>
       </div>
     </div>
   );
