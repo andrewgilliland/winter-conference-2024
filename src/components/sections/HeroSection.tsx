@@ -46,7 +46,7 @@ const HeroSection = () => {
           key={index}
           className={`z-[-1] object-cover ${className}`}
           src={src}
-          alt="Some stuff"
+          alt="Winter conference attendee listening attentively to McMenamy lay down some farming knowledge."
           sizes={`(max-width: ${sizes}px) 100vw`}
           fill={true}
           priority={true}

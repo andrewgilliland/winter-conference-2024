@@ -25,8 +25,9 @@ const AccordionItem = ({ heading, copy }: AccordionItemProps) => {
       }
     >
       <button
-        className="flex justify-between"
+        className="flex justify-between focus:outline-none focus:ring focus:ring-green-300"
         onClick={() => setIsOpen(!isOpen)}
+        aria-label="Toggle Accordion"
       >
         <h4 className="font-montserrat font-bold text-xl text-white text-left">
           {heading}
